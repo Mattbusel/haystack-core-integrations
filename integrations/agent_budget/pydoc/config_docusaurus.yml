@@ -1,0 +1,13 @@
+loaders:
+  - modules:
+      - haystack_integrations.hooks.agent_budget.hook
+    search_path: [../src]
+processors:
+  - type: filter
+    documented_only: true
+    skip_empty_modules: true
+renderer:
+  description: Agent Budget integration for Haystack
+  id: integrations-agent-budget
+  filename: agent_budget.md
+  title: Agent Budget
